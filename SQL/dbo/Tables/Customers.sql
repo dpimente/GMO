@@ -1,0 +1,17 @@
+﻿CREATE TABLE Customers
+
+(
+
+CustomerID INT IDENTITY PRIMARY KEY,
+
+FirstName VARCHAR(50),
+
+LastName VARCHAR(50),
+
+City VARCHAR(50),
+
+State CHAR(2),
+
+Zip VARCHAR(10)
+
+)
