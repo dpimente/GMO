@@ -71,4 +71,7 @@
     <Build Include="dbo\Stored Procedures\Question10Part2.sql" />
     <Build Include="dbo\Stored Procedures\Question10Part1.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="StaticCodeAnalysis.SuppressMessages.xml" />
+  </ItemGroup>
 </Project>

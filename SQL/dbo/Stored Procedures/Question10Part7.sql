@@ -27,7 +27,7 @@ BEGIN
                  C.LastName,
                  S.ProductID,
                  P.Category
-        HAVING COUNT(S.SaleId) >= 2
+        HAVING COUNT(S.SaleID) >= 2
         ORDER BY C.CustomerID;
 
     -- Not sure what to output exactly from the question. So Here's just the customer, product and Ave sales price 

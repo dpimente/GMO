@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Numerics;
 
@@ -138,7 +137,7 @@ namespace MiddleTierConsoleApp
             //}
 
             // going diagonally this time. This works if the number of rows and columns are equal
-            for (int i = 0; i < twoDimensionalArray.Count; i++)
+            for (var i = 0; i < twoDimensionalArray.Count; i++)
             {
                     // Checking the diagonal if it's the value 
                     if (twoDimensionalArray[i][i] == numberToFind)
@@ -151,7 +150,7 @@ namespace MiddleTierConsoleApp
                     if (twoDimensionalArray[i][i] > numberToFind)
                     {
                         // checking the row above [i][i] instance
-                        for (int col = i; col > 0; col--)
+                        for (var col = i; col > 0; col--)
                         {
                             if (twoDimensionalArray[i][col] == numberToFind)
                             {
@@ -159,7 +158,7 @@ namespace MiddleTierConsoleApp
                             }
                         }
 
-                        for (int row = i; row > 0; row--)
+                        for (var row = i; row > 0; row--)
                         {
                             if (twoDimensionalArray[row][i] == numberToFind)
                             {

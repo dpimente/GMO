@@ -14,7 +14,7 @@ BEGIN
 
     BEGIN TRY
         SELECT P.Category,
-               COUNT(S.SaleId) AS NumberOfSales
+               COUNT(S.SaleID) AS NumberOfSales
         FROM dbo.Products AS P
             INNER JOIN dbo.Sales AS S
                 ON P.ProductID = S.ProductID
